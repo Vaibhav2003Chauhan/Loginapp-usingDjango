@@ -1,0 +1,229 @@
+/* signup */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .flex-container {
+    display: flex;
+    justify-content: center;
+  
+    height: 100vh;
+    background-color:black;
+  }
+  
+  .flex-container>div {
+    background-color: whitesmoke;
+    color: white;
+    margin-top:18px;
+    width: 500px;
+    height: 630px;
+  }
+  
+  .heading1 {
+    text-align: center;
+    color:white;
+    font-size:50px;
+   margin-bottom: 0;
+    background-color: black;
+    font-family: 'EB Garamond', serif;
+  }
+  
+  .imagec {
+    text-align: center;
+    margin-top: 8px;
+  }
+  
+  img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border:1px solid black;
+  }
+  
+  #uname {
+    display: block;
+    color: black;
+    margin-top: 10px;
+    margin-left: 32px;
+    font-size: 18px;
+  }
+  
+  #username {
+    display: block;
+    height: 30px;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 32px;
+    padding: 10px 5px;
+  }
+  
+  #email {
+    display: block;
+    color: black;
+    margin-top: 12px;
+    margin-left: 32px;
+    font-size: 18px;
+  }
+  
+  #emailr {
+    display: block;
+    height: 30px;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 32px;
+    padding: 10px 5px;
+  }
+  
+  #Password {
+    display: block;
+    color: black;
+    margin-top: 10px;
+    margin-left: 32px;
+    font-size: 18px;
+  }
+  
+  #Passwordr {
+    display: block;
+    height: 30px;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 32px;
+    padding: 10px 5px;
+  }
+  
+  #cpassword {
+    display: block;
+    color: black;
+    margin-top: 10px;
+    margin-left: 32px;
+    font-size: 18px;
+  }
+  
+  #cpass {
+    display: block;
+    height: 30px;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 32px;
+    padding: 10px 5px;
+  }
+  
+  #btn1 {
+    margin-top: 15px;
+    height: 28px;
+    width: 400px;
+    margin-left: 32px;
+    background-color: rgb(47, 209, 88);
+    padding: 3px 8px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+  
+  #para {
+    color: black;
+    margin-top: 12px;
+    margin-left: 32px;
+  }
+  
+  #btn2 {
+    background-color: rgb(156, 128, 128);
+    margin-top: 12px;
+    margin-left: 32px;
+    height: 28px;
+    width: 100px;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  @media (min-width:295px)and (max-width:410px) {
+    img{
+      height:140px;
+      width: 140px;
+      border-radius: 50%;
+      border: 2px solid black;
+    }
+    #username{
+      width:240px;
+    }
+    .flex-container>div{
+      width:290px;
+      height: 600px;
+      border-radius: 5px;
+    }
+    #emailr{
+      width:240px;
+    }
+    #Passwordr{
+      width:240px;
+    }
+    #cpass{
+      width:240px;
+    }
+    #btn1{
+      width:240px;
+      font-size:16px ;
+    }
+    #uname{
+      font-size:16px ;
+    }
+    #email{
+      font-size:16px ;
+    }
+   #Password{
+    font-size:16px ;
+   }
+   #cpassword{
+    font-size: 16px;
+   }
+    
+  }
+  @media (min-width:411px)and (max-width:550px) {
+    img{
+      height:170px;
+      width: 170px;
+      border-radius: 50%;
+      border: 2px solid black;
+    }
+    #username{
+      width:320px;
+    }
+    .flex-container>div{
+      width:398px;
+      height: 600px;
+      border-radius: 5px;
+    }
+    #emailr{
+      width:320px;
+    }
+    #Passwordr{
+      width:320px;
+    }
+    #cpass{
+      width:320px;
+    }
+    #btn1{
+      width:320px;
+      font-size:18px ;
+    }
+    #uname{
+      font-size:18px ;
+    }
+    #email{
+      font-size:18px ;
+    }
+   #Password{
+    font-size:18px ;
+   }
+   #cpassword{
+    font-size: 18px;
+   }
+    
+  }

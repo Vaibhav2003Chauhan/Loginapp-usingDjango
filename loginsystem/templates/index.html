@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN SYSTEM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--BuPz-p40--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nphrgz8yfnjylrwfr0yl.png");
+            height: 100%;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            margin-top: 10px;
+            color: white;
+
+        }
+
+        .container>button {
+            color: rgb(35, 34, 34);
+           
+            height:35px;
+            width:100px;
+            font-size: 18px;
+            border-radius: 4px;
+            padding:5px 10px;
+            background-color: white;
+        }
+
+        .container1>button {
+           
+            height:35px;
+            width:100px;
+            font-size: 18px;
+            border-radius: 4px;
+            padding:5px 10px;
+            background-color: whitesmoke
+            
+        }
+
+        .container {
+            margin-top: 15px;
+            /* margin-left: 700px; */
+            text-align: center;
+        }
+
+        .container1 {
+            margin-top: 15px;
+            /* margin-left: 700px; */
+            text-align: center;
+
+
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+
+        #main {
+            color: white;
+            font-size: 24px;
+            line-height: 20px;
+            text-align: center;
+            margin-top: 18px;
+        }
+        @media(min-width:290px) and (max-width:381px)
+        {
+            h1{
+                font-size: 36px;
+            }
+            #main{
+                font-size: 18px;
+            }
+         
+        }
+        @media(min-width:380px) and (max-width:452px)
+        {
+            h1{
+                font-size: 36px;
+            }
+            #main{
+                font-size: 18px;
+            }
+        
+        }
+        @media(min-width:452px) and (max-width:600px)
+        {
+            h1{
+                font-size: 42px;
+            }
+            #main{
+                font-size: 19px;
+            }
+        
+        }
+        @media(min-width:600px) and (max-width:650px)
+        {
+            h1{
+                font-size: 42px;
+            }
+            #main{
+                font-size: 20px;
+            }
+         
+        }
+       
+        @media(min-width:650px) and (max-width:750px)
+        {
+            h1{
+                font-size: 45px;
+            }
+            #main{
+                font-size: 20px;
+            }
+          
+        }
+        @media(min-width:750px) and (max-width:830px)
+        {
+            h1{
+                font-size: 46px;
+            }
+            #main{
+                font-size: 21px;
+            }
+          
+        }
+      
+    
+        
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <h1> WELCOME </h1>
+    <p id="main"> This is a login system made by Django. <br><br>
+        Here you can create your account and login that account as well</p>
+    <div class="container"><button class="button">
+            <a href="/login">Login</a>
+        </button></div>
+    <div class="container1"><button class="button">
+            <a href="/signin">Signup</a>
+        </button></div>
+</body>
+
+</html>

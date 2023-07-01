@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        /* signup */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .flex-container {
+    display: flex;
+    justify-content: center;
+  
+    height: 100vh;
+    background-color:black;
+  }
+  
+  .flex-container>div {
+    background-color: whitesmoke;
+    color: white;
+    margin-top:18px;
+    width: 500px;
+    height: 630px;
+  }
+  
+  .heading1 {
+    text-align: center;
+    color:white;
+    font-size:50px;
+   margin-bottom: 0;
+    background-color: black;
+    font-family: 'EB Garamond', serif;
+  }
+  
+  .imagec {
+    text-align: center;
+    margin-top: 8px;
+  }
+  
+  img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border:1px solid black;
+  }
+  
+  #uname {
+    display: block;
+    color: black;
+    margin-top: 10px;
+    margin-left: 32px;
+    font-size: 18px;
+  }
+  
+  #username {
+    display: block;
+    height: 30px;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 32px;
+    padding: 10px 5px;
+  }
+  
+  #email {
+    display: block;
+    color: black;
+    margin-top: 12px;
+    margin-left: 32px;
+    font-size: 18px;
+  }
+  
+  #emailr {
+    display: block;
+    height: 30px;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 32px;
+    padding: 10px 5px;
+  }
+  
+  #Password {
+    display: block;
+    color: black;
+    margin-top: 10px;
+    margin-left: 32px;
+    font-size: 18px;
+  }
+  
+  #Passwordr {
+    display: block;
+    height: 30px;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 32px;
+    padding: 10px 5px;
+  }
+  
+  #cpassword {
+    display: block;
+    color: black;
+    margin-top: 10px;
+    margin-left: 32px;
+    font-size: 18px;
+  }
+  
+  #cpass {
+    display: block;
+    height: 30px;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 32px;
+    padding: 10px 5px;
+  }
+  
+  #btn1 {
+    margin-top: 15px;
+    height: 28px;
+    width: 400px;
+    margin-left: 32px;
+    background-color: rgb(47, 209, 88);
+    padding: 3px 8px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+  
+  #para {
+    color: black;
+    margin-top: 12px;
+    margin-left: 32px;
+  }
+  
+  #btn2 {
+    background-color: rgb(156, 128, 128);
+    margin-top: 12px;
+    margin-left: 32px;
+    height: 28px;
+    width: 100px;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  @media (min-width:295px)and (max-width:410px) {
+    img{
+      height:140px;
+      width: 140px;
+      border-radius: 50%;
+      border: 2px solid black;
+    }
+    #username{
+      width:240px;
+    }
+    .flex-container>div{
+      width:290px;
+      height: 600px;
+      border-radius: 5px;
+    }
+    #emailr{
+      width:240px;
+    }
+    #Passwordr{
+      width:240px;
+    }
+    #cpass{
+      width:240px;
+    }
+    #btn1{
+      width:240px;
+      font-size:16px ;
+    }
+    #uname{
+      font-size:16px ;
+    }
+    #email{
+      font-size:16px ;
+    }
+   #Password{
+    font-size:16px ;
+   }
+   #cpassword{
+    font-size: 16px;
+   }
+    
+  }
+  @media (min-width:411px)and (max-width:550px) {
+    img{
+      height:170px;
+      width: 170px;
+      border-radius: 50%;
+      border: 2px solid black;
+    }
+    #username{
+      width:320px;
+    }
+    .flex-container>div{
+      width:398px;
+      height: 600px;
+      border-radius: 5px;
+    }
+    #emailr{
+      width:320px;
+    }
+    #Passwordr{
+      width:320px;
+    }
+    #cpass{
+      width:320px;
+    }
+    #btn1{
+      width:320px;
+      font-size:18px ;
+    }
+    #uname{
+      font-size:18px ;
+    }
+    #email{
+      font-size:18px ;
+    }
+   #Password{
+    font-size:18px ;
+   }
+   #cpassword{
+    font-size: 18px;
+   }
+    
+  }
+    </style>
+</head>
+<body>
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} my-0 " role="alert">
+        <strong> {{ message }}</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endfor %}
+    {% endif %}
+    <h1 class="heading1">Signup  </h1>
+<div class="flex-container">
+    <div> 
+       
+        <form method="post" action="/signin">
+           {% csrf_token %}  
+            <div class="imagec"><img src="https://uploads-ssl.webflow.com/6073f69c8de34f4e58ad116c/609644865bb118330d98cd23_a3.png" alt=""></div>
+            <label for="username" id="uname">Username </label>
+            <input type="text" id="username" name="username" placeholder="Enter your username"required />
+            <label for="Email" id="email">Email </label>
+            <input type="email" id="emailr" name="email" placeholder="Enter your Email  "required />
+            <label for="Password" id="Password">Password </label>
+            <input type="password" id="Passwordr" name="password" placeholder="Enter your Password  "required />
+            <label for="cpassword" id="cpassword">Confirm Password </label>
+            <input type="password" id="cpass" name="cpassword" placeholder="Enter your password "required />
+            <button id="btn1" type="submit">Signup</button>
+            <p id="para">Already a user ?    <a href="/login">Click here to login</a></p>
+          
+        </form>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
